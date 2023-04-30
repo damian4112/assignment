@@ -4,16 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/styles.css"/>
+    <link rel="stylesheet" href="styles.css"/>
     <title>Document</title>
 </head>
+<!-- 실시간시계
+로컬스토리지를 사용한 로그인
+로컬스토리지를 사용한 투두리스트
+랜덤 배경이미지
+날씨와 위치 -->
 <body>
-    
+<div id="login">
+    <div id="black_bg">
+        <div id="white_box">
+            <h1>What's your name?</h1>
+            <form id="login_form">
+                <input id="input_username" required type="text"/>
+                <button id="btn">login</button>
+            </form>
+        </div>
+    </div>
+</div>
 
+<div id="wholebox">
+    <div id="clock">
+        <h1 id="h1-date"></h1>
+        <h1 id="h1-clock"></h1>
+    </div>
+    <div id="todo">
+        <h1 id="greeting"></h1>
+        <h1>Today's Plan?</h1>
+        <form id="todo_form">
+            <input type="text" required/>
+        </form>
+        <div id="todos">
+            <div id="todo_list">
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+    <div id="weather">
+        <h2>Weather Infomation</h2>
+        <span id="city"></span>
+        <p><span id="temp"></span>℃</p>
+        <p>It's <span id="weather_now"></span> now</p>
+    </div>
+</div>
 
-<h1>hahahah</h1>
+        
 
-
+<script src="js/main.js"></script>
+<script src="js/clock.js"></script>
+<script src="js/todo.js"></script>
+<script src="js/weather.js"></script>
+<script src="js/background.js"></script>
 
 </body>
 </html>
